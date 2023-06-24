@@ -30,7 +30,7 @@ namespace Parser.Controllers
             try
             {
                 ResourceDirectory = "Not Found";
-                LogLocation = $"client_resources\\{@"play.gta.world_22005"}\\.storage";
+                LogLocation = $"client_resources\\49cd56cb2f80e5410e89a321b21faeed\\.storage";
 
                 // Return if the user has not picked
                 // a RAGEMP directory path yet
@@ -53,8 +53,8 @@ namespace Parser.Controllers
                         log = sr.ReadToEnd();
                     }
 
-                    if (!Regex.IsMatch(log, "\\\"server_version\\\":\\\"GTA World[^\"]*\""))
-                        continue;
+                  //  if (!Regex.IsMatch(log, "\\\"server_version\\\":\\\"GTA World[^\"]*\""))
+                   //     continue;
 
                     potentialLogs.Add(resourceDirectory);
                 }
